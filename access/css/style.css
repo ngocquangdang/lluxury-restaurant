@@ -1,0 +1,557 @@
+body, html {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container-fluid {
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 17.5%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+}
+
+.navbar .navbar-logo {
+  margin-right: 1rem;
+}
+
+.navbar .navbar-logo img {
+  width: 75%;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+.navbar ul a {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-right: 0.3rem;
+  text-transform: uppercase;
+  font-size: 8pt;
+  color: black;
+  font-weight: 900;
+}
+
+.navbar .navbar-cart {
+  margin-right: 1rem;
+}
+
+.navbar .navbar-book-table {
+  background: #ffa600fa;
+  border-radius: 5px;
+}
+
+.navbar .navbar-book-table button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.1rem;
+  background: #ffa600fa;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  color: white;
+}
+
+.navbar .navbar-book-table button img {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.carousel {
+  width: 100%;
+  height: 22rem;
+  background: gray;
+}
+
+.contact-carousel {
+  background: #edf1f3;
+  height: 4rem;
+}
+
+.contact-carousel .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.contact-carousel .container .explore-food {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.contact-carousel .container .explore-food img {
+  width: 75%;
+}
+
+.contact-carousel .container .read-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40%;
+  border-right: 1px solid gray;
+  width: 9rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.contact-carousel .container .read-review .review-content {
+  margin: 0 1rem;
+}
+
+.contact-carousel .container .read-review .review-content p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: 900;
+}
+
+.contact-carousel .container .read-review .review-content p:nth-child(2) {
+  color: #ffa600fa;
+}
+
+.contact-carousel .container .read-review .next-review {
+  background: #ffa600fa;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+.contact-carousel .container .read-review .next-review .fas {
+  padding: 0.3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+}
+
+.contact-carousel .container .call-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.contact-carousel .container .call-us .call-content {
+  border-right: 1px solid gray;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-carousel .container .call-us .call-content .phone-icon {
+  margin: 0.5rem;
+}
+
+.contact-carousel .container .call-us .call-content .phone-icon .fal {
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+}
+
+.contact-carousel .container .call-us .call-content .content p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: 900;
+}
+
+.contact-carousel .container .call-us .call-content .content p:nth-child(2) {
+  color: #ffa600fa;
+}
+
+.contact-carousel .container .call-us .phone-number {
+  font-size: 18pt;
+  margin: 0;
+  font-weight: 900;
+}
+
+.about-restaurant {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 3rem 0;
+}
+
+.about-restaurant .about-restaurant-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem 0;
+}
+
+.about-restaurant .about-restaurant-info h4 {
+  font-size: 20pt;
+  margin: 1rem 0;
+}
+
+.about-restaurant .about-restaurant-info .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-restaurant .about-restaurant-info .read-more .btn {
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background: #ffa600fa;
+  border-radius: 2px;
+  margin-right: 3rem;
+}
+
+.about-restaurant .about-restaurant-info .read-more img {
+  width: 8.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-restaurant .image-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  margin: 1rem;
+}
+
+.about-restaurant .image-info img {
+  width: 13rem;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.about-restaurant .image-info img:nth-child(2), .about-restaurant .image-info img:nth-child(4) {
+  position: absolute;
+  float: right;
+  margin-top: -2rem;
+}
+
+.backgroud-content {
+  height: 20rem;
+  background: gray;
+}
+
+.today-special {
+  height: 25rem;
+  position: relative;
+}
+
+.today-special .special-container {
+  position: absolute;
+  display: block;
+  bottom: 2rem;
+}
+
+.today-special .special-container .today-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20pt;
+  color: white;
+}
+
+.today-special .special-container .today-title h3 {
+  margin: 0.5rem;
+  text-transform: capitalize;
+  font-size: 20pt;
+}
+
+.today-special .special-container .today-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.today-special .special-container .today-content .today-item {
+  margin: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.today-special .special-container .today-content .today-item img {
+  width: 100%;
+}
+
+.today-special .special-container .today-content .today-item .today-food {
+  text-align: center;
+  padding: 0.5rem 2.5rem;
+}
+
+.today-special .special-container .today-content .today-item .today-food h4 {
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.today-special .special-container .today-content .today-item .today-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 2rem;
+  border-top: 1px solid gray;
+  padding: 0.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.today-special .special-container .today-content .today-item .today-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.today-special .special-container .today-content .today-item .today-info .info .name {
+  display: block;
+  border-right: 1px solid gray;
+}
+
+.today-special .special-container .today-content .today-item .today-info .info .name p {
+  margin: 0;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 8pt;
+}
+
+.today-special .special-container .today-content .today-item .today-info .info .name p:nth-child(2) {
+  color: #ee3e78;
+}
+
+.today-special .special-container .today-content .today-item .today-info .info .phone p {
+  margin: 0 1rem;
+  font-size: 18pt;
+}
+
+.today-special .special-container .today-content .today-item .today-info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffa600fa;
+}
+
+.today-special .special-container .today-content .today-item .today-info .price .fas {
+  font-size: smaller;
+  margin-bottom: 1rem;
+}
+
+.today-special .special-container .today-content .today-item .today-info .price p {
+  margin: 0;
+  font-size: 20pt;
+}
+
+.food-menu {
+  padding: 2rem;
+}
+
+.food-menu .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 3rem;
+  position: relative;
+}
+
+.food-menu .heading .title {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20pt;
+}
+
+.food-menu .heading img {
+  position: absolute;
+}
+
+.food-menu .heading .img-left {
+  width: 13%;
+  height: auto;
+  left: 0;
+  top: 0;
+}
+
+.food-menu .heading .img-right {
+  width: 15%;
+  height: auto;
+  right: 12%;
+  bottom: 2rem;
+}
+
+.food-menu .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px dashed;
+}
+
+.food-menu .tab .tab-item {
+  margin: 1rem;
+  text-align: center;
+}
+
+.food-menu .tab .tab-item .img-item {
+  width: auto;
+}
+
+.food-menu .tab .tab-item p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 9pt;
+  font-weight: 900;
+}
+
+.food-menu .menu-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 1.5rem 0;
+}
+
+.food-menu .menu-list .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid;
+  height: auto;
+  margin-right: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.food-menu .menu-list .list-item .item-inner {
+  padding-right: 2rem;
+}
+
+.food-menu .menu-list .list-item .item-inner h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 9pt;
+}
+
+.food-menu .menu-list .list-item .item-inner p {
+  margin: 0;
+  font-size: 9pt;
+}
+
+.food-menu .menu-list .list-item .price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffa600fa;
+  padding: 0 1rem;
+}
+
+.food-menu .menu-list .list-item .price .fas {
+  font-size: smaller;
+  margin-bottom: 1rem;
+}
+
+.food-menu .menu-list .list-item .price p {
+  margin: 0;
+  font-size: 17pt;
+}
+
+.food-menu .menu-list .list-item:nth-child(2) {
+  float: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 0;
+}
+
+.food-menu .food-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.food-menu .food-button .btn {
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background: #ffa600fa;
+  border-radius: 2px;
+  font-size: 8pt;
+  font-weight: 740;
+}
+/*# sourceMappingURL=style.css.map */

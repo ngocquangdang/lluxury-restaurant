@@ -1,0 +1,90 @@
+.contact-carousel{
+    background: #edf1f3;
+    height: 4rem;
+    .container{
+        display: flex;  
+        height: 100%;
+        position: relative;
+        .explore-food{
+            position: absolute;
+            bottom: 1rem;
+            img{
+                width: 75%;
+            }
+        }
+        .read-review{
+            display: flex;
+            margin-left: 40%;
+            border-right: 1px solid gray;
+            width: 9rem;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            .review-content{
+                margin: 0 1rem;
+                p{
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-size: 8pt;
+                    font-weight: 900;
+                    &:nth-child(2){
+                        color: #ffa600fa;
+                    }
+                }
+            }
+            .next-review{
+                background: #ffa600fa;
+                padding: 0.2rem;
+                border-radius: 50%;
+                .fas{
+                    padding: 0.3rem;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    width: 1rem;
+                    height: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+        .call-us{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-left: 1rem;
+            
+            .call-content{
+                border-right: 1px solid gray;
+                padding-right: 1rem;
+                display: flex;
+                align-items: center;
+                .phone-icon{
+                    margin: 0.5rem;
+                    .fal{
+                        width: 1rem;
+                        height: 1rem;
+                        text-align: center;
+                    }
+                }
+                .content{
+                    p{
+                        margin: 0;
+                        text-transform: uppercase;
+                        font-size: 8pt;
+                        font-weight: 900;
+                        &:nth-child(2){
+                            color: #ffa600fa;
+                        }
+                    }
+                }
+                
+            }
+            .phone-number{
+                font-size: 18pt;
+                margin: 0;
+                font-weight: 900;
+            }
+        }
+    }
+    
+}

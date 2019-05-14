@@ -1,0 +1,91 @@
+.backgroud-content{
+    height: 20rem;
+    background: gray;
+}
+.today-special{
+    height: 25rem;
+    position: relative;
+    .special-container{
+        position: absolute;
+        display: block;
+        bottom: 2rem;
+        .today-title{
+            text-align: center;
+            font-weight: 900;
+            font-size: 20pt;
+            color: white;
+            h3{
+                margin: 0.5rem;
+                text-transform: capitalize;
+                font-size: 20pt;
+            } 
+        }
+        .today-content{
+            display: flex;
+            justify-content: space-between;
+            .today-item{
+                margin: 1rem;
+                //box-shadow: 1rem 14rem 5rem 2rem #f1f1f1;
+                flex: 1;
+                img{
+                    width: 100%;
+                }
+                .today-food{
+                    text-align: center;
+                    padding: 0.5rem 2.5rem;
+                    h4{
+                        margin: 0.5rem 0;
+                        text-transform: capitalize;
+                    }
+                }
+                .today-info{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 2rem;
+                    border-top: 1px solid gray;
+                    padding: 0.5rem 0;
+                    align-items: center;
+                    .info{
+                        display: flex;
+                        align-items: center;
+                        .name{
+                            display: block;
+                            border-right: 1px solid gray;
+                            p{
+                                margin: 0;
+                                padding-right: 1rem;
+                                text-transform: uppercase;
+                                font-weight: 900;
+                                font-size: 8pt;
+                                &:nth-child(2){
+                                    color: rgb(238, 62, 120);
+                                }
+                            }
+                        }
+                        .phone{
+                            p{
+                                margin: 0 1rem;
+                                font-size: 18pt;
+                            }
+                        }
+                    }
+                    .price{
+                        display: flex;
+                        align-items: center;
+                        color: #ffa600fa;
+                        .fas{
+                            font-size: smaller;
+                            margin-bottom: 1rem;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 20pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

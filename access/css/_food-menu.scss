@@ -1,0 +1,116 @@
+.food-menu{
+    padding: 2rem;
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        height: 3rem;
+        position: relative;
+        .title{
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 20pt;
+        }
+        img{
+            position: absolute;
+        }
+        .img-left{
+            width: 13%;
+            height: auto;
+            left: 0;
+            top: 0;
+        }
+        
+        .img-right{
+            width: 15%;
+            height: auto;
+            right: 12%;
+            bottom: 2rem;
+        }
+    }
+    .tab{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dashed;
+        .tab-item{
+            margin: 1rem;
+            text-align: center;
+            .img-item{
+                width: auto;
+            }
+            p{
+                margin: 0;
+                text-transform: uppercase;
+                font-size: 9pt;
+                font-weight: 900;
+            }
+        }
+    }  
+    .menu-list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 1.5rem 0;
+        .list-item{
+            display: flex;
+            padding: 1rem 0;
+            border-bottom: 1px solid;
+            height: auto;
+            margin-right: 1rem;
+            flex: 1;
+            
+            // &:nth-of-type(odd){
+            //     float: left;
+            //     flex: 1;
+            // }
+            .item-inner{
+                padding-right: 2rem;
+                h4{
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 9pt;
+                }
+                p{
+                    margin: 0;
+                    font-size: 9pt;
+                }
+            }
+            .price{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffa600fa;
+                padding: 0 1rem;
+                .fas{
+                    font-size: smaller;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    margin: 0;
+                    font-size: 17pt;
+                }
+            }
+            &:nth-child(2){
+                float: right;
+                flex: 1;
+                margin-top: 0;
+            }
+        }
+    } 
+    .food-button{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        .btn{
+            border: none;
+            text-transform: uppercase;
+            padding: 0.5rem;
+            background: #ffa600fa;
+            border-radius: 2px;
+            font-size: 8pt;
+            font-weight: 740;
+        }
+    }
+}
