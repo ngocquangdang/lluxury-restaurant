@@ -1,16 +1,17 @@
+@import "mixin";
+
 .food-menu{
-    padding: 2rem;
+    padding: 2rem 0;
     .heading{
         display: flex;
         justify-content: space-between;
         height: 3rem;
         position: relative;
         .title{
-            margin: 0;
+            @include h3();
             width: 100%;
             text-align: center;
-            text-transform: capitalize;
-            font-size: 20pt;
+
         }
         img{
             position: absolute;
@@ -52,17 +53,12 @@
         grid-template-columns: 50% 50%;
         padding: 1.5rem 0;
         .list-item{
-            display: flex;
+            display: grid;
+            grid-template-columns: 80% 20%;
             padding: 1rem 0;
             border-bottom: 1px solid;
             height: auto;
             margin-right: 1rem;
-            flex: 1;
-            
-            // &:nth-of-type(odd){
-            //     float: left;
-            //     flex: 1;
-            // }
             .item-inner{
                 padding-right: 2rem;
                 h4{
@@ -92,11 +88,6 @@
                     font-size: 17pt;
                 }
             }
-            &:nth-child(2){
-                float: right;
-                flex: 1;
-                margin-top: 0;
-            }
         }
     } 
     .food-button{
@@ -104,13 +95,7 @@
         justify-content: center;
         padding: 1rem;
         .btn{
-            border: none;
-            text-transform: uppercase;
-            padding: 0.5rem;
-            background: #ffa600fa;
-            border-radius: 2px;
-            font-size: 8pt;
-            font-weight: 740;
+            @include button();
         }
     }
 }

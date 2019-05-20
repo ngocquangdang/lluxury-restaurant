@@ -1,3 +1,5 @@
+@import "mixin";
+
 .backgroud-content{
     height: 20rem;
     background: gray;
@@ -9,16 +11,11 @@
         position: absolute;
         display: block;
         bottom: 2rem;
-        .today-title{
-            text-align: center;
-            font-weight: 900;
-            font-size: 20pt;
-            color: white;
+        .heading{
+            @include title(white);
             h3{
-                margin: 0.5rem;
-                text-transform: capitalize;
-                font-size: 20pt;
-            } 
+                @include h3();
+            }
         }
         .today-content{
             display: flex;
@@ -27,6 +24,8 @@
                 margin: 1rem;
                 //box-shadow: 1rem 14rem 5rem 2rem #f1f1f1;
                 flex: 1;
+                background: white;
+                z-index: 1;
                 img{
                     width: 100%;
                 }
@@ -46,27 +45,12 @@
                     padding: 0.5rem 0;
                     align-items: center;
                     .info{
-                        display: flex;
-                        align-items: center;
+                        @include info();
                         .name{
-                            display: block;
-                            border-right: 1px solid gray;
-                            p{
-                                margin: 0;
-                                padding-right: 1rem;
-                                text-transform: uppercase;
-                                font-weight: 900;
-                                font-size: 8pt;
-                                &:nth-child(2){
-                                    color: rgb(238, 62, 120);
-                                }
-                            }
+                            @include name(rgb(238, 62, 120));
                         }
                         .phone{
-                            p{
-                                margin: 0 1rem;
-                                font-size: 18pt;
-                            }
+                            @include phone();
                         }
                     }
                     .price{
@@ -86,6 +70,4 @@
             }
         }
     }
-    
-    
 }

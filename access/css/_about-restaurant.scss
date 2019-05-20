@@ -1,3 +1,5 @@
+@import "mixin";
+
 .about-restaurant{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -13,12 +15,8 @@
             display: flex;
             align-items: center;
             .btn{
-                border: none;
-                text-transform: uppercase;
-                padding: 0.5rem;
-                background: #ffa600fa;
-                border-radius: 2px;
                 margin-right: 3rem;
+                @include button();
             }
             img{
                 width: 8.5rem;
@@ -28,14 +26,14 @@
     }
     .image-info{
         flex: 1;
-        display: block;
+        display: grid;
+        grid-template-columns: 50% 50%;
         margin: 1rem;
         img{
             width: 13rem;
             margin: 0 0.5rem 0.5rem 0;
             &:nth-child(2),
             &:nth-child(4){
-                position: absolute;
                 float: right;
                 margin-top: -2rem;
             }

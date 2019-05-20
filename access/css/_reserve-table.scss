@@ -1,0 +1,109 @@
+@import "mixin";
+
+.reserve-table{
+    margin-bottom: 2rem;
+    .heading{
+        justify-content: center;
+        height: 3rem;
+        .title{
+            @include h3();
+            text-align: center;
+        }
+    }
+    .reserve-content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        img{
+            width: 80%; 
+        }
+        .request-table{
+            display: grid;
+            grid-template-rows: auto;
+            margin: 1rem;
+            form{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+                .input-group{
+                    margin: 0.5rem 1rem 0.5rem 0;
+                    position: relative;   
+                    input{
+                        display: block;
+                        margin: 0px auto;
+                        border: none;
+                        border-bottom: 1px solid dodgerblue;
+                        outline: none;
+                        padding: 6px 0px;
+                        width: 100%;
+                        &:focus + label, &:valid + label {
+                            top: -1rem;
+                            left: -0.2rem;
+                            font-size: 10pt;
+                        }
+                    }
+                    
+                    label{
+                        text-transform: capitalize;
+                        color: gray;
+                        position: absolute;
+                        left: 0px;
+                        top: 4px;
+                        font-size: 14px;
+                        pointer-events: none;
+                        -webkit-transition: 200ms;
+                        transition: 200ms;
+                    }
+                    .far{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }          
+                }
+            }
+            .submit-contact{
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 2rem;
+                button{
+                    @include button();
+                }
+                .info{
+                    @include info();
+                    .name{
+                        @include name(rgb(238, 62, 120));
+                    }
+                    .phone{
+                        @include phone();
+                    }
+                       
+                    
+                    // display: flex;
+                    // align-items: center;
+                    // .name{
+                    //     display: block;
+                    //     border-right: 1px solid gray;
+                    //     margin: 0 1rem;
+                    //     p{
+                    //         margin: 0;
+                    //         padding-right: 1rem;
+                    //         text-transform: uppercase;
+                    //         font-weight: 900;
+                    //         font-size: 8pt;
+                    //         &:nth-child(2){
+                    //             color: rgb(238, 62, 120);
+                    //         }
+                    //     }
+                    // }
+                    // .phone{
+                    //     p{
+                    //         margin: 0 1rem;
+                    //         font-size: 18pt;
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+}
+
+

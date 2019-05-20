@@ -1,0 +1,55 @@
+// button
+@mixin button {
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background: #ffa600fa;
+    border-radius: 2px;
+    font-size: 8pt;
+    font-weight: 740;
+    width: fit-content;
+}
+
+//--info
+@mixin name($color) {
+    display: block;
+    border-right: 1px solid gray;
+    margin: 0 1rem;
+    p{
+        margin: 0;
+        padding-right: 1rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 8pt;
+        &:nth-child(2){
+            color: $color;
+        }
+    }
+}
+@mixin phone {
+    p{
+        margin: 0 1rem;
+        font-size: 20pt;
+        font-weight: 900;
+    }
+}
+
+@mixin info() {
+    display: flex;
+    align-items: center;
+
+}
+
+//-- title
+@mixin h3 {
+    margin: 0.5rem;
+    text-transform: capitalize;
+    font-size: 20pt;
+}
+@mixin title($color) {
+    text-align: center;
+    font-weight: 900;
+    font-size: 20pt;
+    color: $color;
+    
+}
