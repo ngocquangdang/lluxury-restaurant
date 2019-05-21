@@ -1,0 +1,17 @@
+body,html{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container-fluid{
+    margin: 0;
+}
+.container{
+    display: flex;
+    margin: 0 17.5%;
+}
+
+@import "../css/content/navbar";
+@import "../css/home-page/home-page";
+@import "../css/content/footer";
+
+
