@@ -482,6 +482,7 @@ body, html {
 
 .food-menu .tab .tab-item .img-item {
   width: auto;
+  padding: 0.2rem;
 }
 
 .food-menu .tab .tab-item p {
@@ -716,6 +717,156 @@ body, html {
   font-weight: 900;
 }
 
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading .title {
+  color: #14141d;
+  font-family: "Playfair Display";
+  font-size: 25pt;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px dashed;
+}
+
+.tab .tab-item {
+  margin: 1rem;
+  text-align: center;
+}
+
+.tab .tab-item .img-item {
+  width: auto;
+  padding: 0.2rem;
+}
+
+.tab .tab-item p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 9pt;
+  font-weight: 900;
+}
+
+.menu {
+  display: block;
+}
+
+.menu .menu-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 2rem 0;
+}
+
+.menu .menu-grid .grid-item {
+  overflow: hidden;
+}
+
+.menu .menu-grid .grid-item .image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.menu .menu-grid .grid-item .info-item {
+  padding: 1.5rem 1rem;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+}
+
+.menu .menu-grid .grid-item .info-item .info-item-name {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.menu .menu-grid .grid-item .info-item .info-item-name h4 {
+  margin: 0;
+  color: #14141d;
+  font-family: Sintony;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.menu .menu-grid .grid-item .info-item .info-item-name p {
+  margin: 0;
+  color: #5c6369;
+  font-family: Sintony;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.menu .menu-grid .grid-item .info-item .info-item-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fea100;
+  font-family: "Playfair Display";
+  padding-top: 1rem;
+}
+
+.menu .menu-grid .grid-item .info-item .info-item-price .fas {
+  font-size: smaller;
+  margin-bottom: 1rem;
+}
+
+.menu .menu-grid .grid-item .info-item .info-item-price p {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.menu .food-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.menu .food-button .btn {
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background: #ffa600fa;
+  border-radius: 2px;
+  font-size: 8pt;
+  font-weight: 740;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .footer {
   background: #373844;
   padding-top: 2rem;
@@ -891,5 +1042,17 @@ body, html {
 
 .footer .footer-content .our-app .google-play .info p:nth-child(2) {
   font-size: 15pt;
+}
+
+.footer .copyright {
+  text-align: center;
+}
+
+.footer .copyright::before, .footer .copyright::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 100%;
+  margin: 0.6rem 1rem;
 }
 /*# sourceMappingURL=style.css.map */

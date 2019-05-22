@@ -2,87 +2,41 @@ section.container-fluid.food-menu
     .heading
         h3.title food menu
         img.img-left(src="../imageleft.png", alt="")
-       
         img.img-right(src="../imageright.png", alt="")
         
     .tab
-        .tab-item
-            img.img-item(src="../icon_all.png", alt="")
-            p all
-        .tab-item
-            img.img-item(src="../icon_breakfast.png", alt="")
-            p breakfast
-        .tab-item
-            img.img-item(src="../icon_lunch.png", alt="")
-            p lunch
-        .tab-item
-            img.img-item(src="../icon_snacks.png", alt="")
-            p snack
-        .tab-item
-            img.img-item(src="../icon_pizza.png", alt="")
-            p pizza
-        .tab-item
-            img.img-item(src="../icon_soups.png", alt="")
-            p soup
-        .tab-item
-            img.img-item(src="../icon_dinner.png", alt="")
-            p dinner
-    .container.menu-list
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
-        .list-item
-            .item-inner
-                h4 ultimate organic fruit salad
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            .price
-                i.fas.fa-dollar-sign
-                p 80.00
+        //- mixin tab-item
+        mixin tab-item(scr,title)
+            .tab-item
+                img.img-item(src=scr, alt="")
+                p= title
+        //- mixin tab-item
+        +tab-item("../icon_all.png", 'all')
+        +tab-item("../icon_breakfast.png", 'breakfast')
+        +tab-item("../icon_lunch.png", 'lunch')
+        +tab-item("../icon_snacks.png", 'snack')
+        +tab-item("../icon_pizza.png", 'pizza')
+        +tab-item("../icon_soups.png", 'soup')
+        +tab-item("../icon_dinner.png", 'dinner')
+    .container.menu-list    
+        //- mixin list-item
+        mixin list-item
+            .list-item
+                .item-inner
+                    h4 ultimate organic fruit salad
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                .price
+                    i.fas.fa-dollar-sign
+                    p 80.00
+        //- mixin list-item
+
+        +list-item
+        +list-item
+        +list-item
+        +list-item
+        +list-item
+        +list-item
+        +list-item
+        +list-item
     .food-button
         button.btn(type='submit') explore food menu

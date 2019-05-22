@@ -1,4 +1,5 @@
 @import "../mixin/mixin";
+@import "../content/menu";
 
 .food-menu{
     padding: 2rem 0;
@@ -31,64 +32,10 @@
         }
     }
     .tab{
-        display: flex;
-        justify-content: center;
-        border-bottom: 1px dashed;
-        .tab-item{
-            margin: 1rem;
-            text-align: center;
-            .img-item{
-                width: auto;
-            }
-            p{
-                margin: 0;
-                text-transform: uppercase;
-                font-size: 9pt;
-                font-weight: 900;
-            }
-        }
+        @include tab();
     }  
     .menu-list{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        padding: 1.5rem 0;
-        .list-item{
-            display: grid;
-            grid-template-columns: 80% 20%;
-            padding: 1rem 0;
-            border-bottom: 1px solid;
-            height: auto;
-            margin-right: 1rem;
-            .item-inner{
-                padding-right: 2rem;
-                h4{
-                    margin: 0;
-                    text-transform: uppercase;
-                    font-weight: 900;
-                    font-size: 9pt;
-                }
-                p{
-                    margin: 0;
-                    font-size: 9pt;
-                }
-            }
-            .price{
-                flex: 1;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #ffa600fa;
-                padding: 0 1rem;
-                .fas{
-                    font-size: smaller;
-                    margin-bottom: 1rem;
-                }
-                p{
-                    margin: 0;
-                    font-size: 17pt;
-                }
-            }
-        }
+        @include menu-list();
     } 
     .food-button{
         display: flex;

@@ -1,0 +1,36 @@
+@import "../content/menu";
+
+.banner{
+    display: flex;
+    height: 10rem;
+}
+.heading{
+    text-align: center;
+    .title{
+    color: #14141d;
+    font-family: "Playfair Display";
+    font-size: 25pt;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: capitalize;
+    }
+}
+.tab{
+    @include tab();
+}
+.menu{
+    display: block;
+    .menu-grid{
+        @include menu-grid();
+    }
+    .food-button{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        .btn{
+            @include button();
+        }
+    }
+}
+
+
