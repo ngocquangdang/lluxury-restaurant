@@ -1,0 +1,22 @@
+@import "../mixin/mixin";
+
+.our-cooks{
+    padding: 2rem 0;
+    .our-cook{
+        padding: 0 17.5%;
+        h3{
+            @include h3();
+            text-align: center;
+        }
+        #our-cooks .item{
+            .cheff-name{
+                padding: 1rem;
+                background: white;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: $text_size;
+                font-weight: 700;
+            }
+        }
+    }
+}

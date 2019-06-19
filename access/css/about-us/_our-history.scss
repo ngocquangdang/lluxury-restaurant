@@ -1,0 +1,28 @@
+@import "../mixin/mixin";
+
+.our-history{
+    display: grid;
+    margin: 3rem 30%;
+    grid-gap: 2rem;
+    border-bottom: 1px solid $text_color;
+    h3{
+        @include h3();
+        text-align: center;
+    }
+    p{
+        color: $text_color;
+        text-align: center
+    }
+    .video{
+        padding: 1rem 0;
+        video{
+            width: 100%;
+            height: auto;
+        }
+        span{
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $title_color;
+        }
+    }
+}

@@ -1,13 +1,28 @@
+$btn_background: #ffa600fa;
+$bg_speciality: #ecf1f4;
+
+//- color
+$text_color: #5c6369;
+$title_color: #14141d;
+
+//- font size
+$big_title_size: 2rem;
+$title_size: 1rem;
+$text_size: 0.9rem;
+
+$line_color: #eeeeee;
 // button
-@mixin button {
+@mixin btn {
     border: none;
     text-transform: uppercase;
-    padding: 0.5rem;
-    background: #ffa600fa;
-    border-radius: 2px;
-    font-size: 8pt;
-    font-weight: 740;
+    background: $btn_background;
+    border-radius: 5px;
+    font-size: $text_size;
+    
     width: fit-content;
+    outline: none;
+    color: white;
+    
 }
 
 //--info
@@ -20,15 +35,16 @@
         padding-right: 1rem;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 8pt;
+        font-size: $text_size;
         &:nth-child(2){
             color: $color;
+            font-size: $title_size;
         }
     }
 }
 @mixin phone {
     p{
-        margin: 0 1rem;
+        // margin: 0 1rem;
         font-size: 20pt;
         font-weight: 900;
     }
@@ -42,14 +58,16 @@
 
 //-- title
 @mixin h3 {
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     text-transform: capitalize;
-    font-size: 20pt;
+    font-size: $big_title_size;
+    color: $title_color;
+    
 }
 @mixin title($color) {
     text-align: center;
     font-weight: 900;
-    font-size: 20pt;
+    font-size: $title_size;
     color: $color;
     
 }

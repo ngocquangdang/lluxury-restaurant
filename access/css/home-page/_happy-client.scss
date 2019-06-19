@@ -1,0 +1,61 @@
+@import "../mixin/mixin";
+
+.happy-client{
+    padding: 3rem 0;
+    background: url('../../../image/-background.png');
+    .heading{
+        position: relative;
+        h3{
+            @include h3();
+            color: white;
+            text-align: center;
+        }
+        .img-left{
+            position: absolute;
+            right: 19rem;
+            bottom: 0.5rem;
+        }
+    }
+}
+.info-client{
+    position: relative;
+    padding: 1rem 0;
+    .item{
+        text-align: center;
+        span{
+            display: flex;
+            margin: 0 30rem; 
+            color: white;
+            p{
+                color: white;
+                text-align: center;
+                 
+            }
+        }
+        span::after{
+            content: " \" ";
+            font-size: $big_title_size;
+            margin-top: auto;
+            margin-left: 2rem;
+        }
+        span::before{
+            content: " \" ";
+            font-size: $big_title_size;
+            right: 1rem;
+            margin-top: 0;
+            margin-right: 2rem;
+        }
+        
+    }
+}
+
+.right{
+    position: absolute;
+    right: 17.5%;
+    top: 0;
+}
+.left{
+    position: absolute;
+    left: 17.5%;
+    top: 0;
+}

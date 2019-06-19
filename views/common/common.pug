@@ -5,6 +5,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.2/css/all.css', crossorigin='anonymous')
+        link(rel="stylesheet", href="../owl.carousel/dist/assets/owl.carousel.min.css")
+        link(rel="stylesheet", href="../owl.carousel/dist/assets/owl.theme.default.min.css")
         link(rel="stylesheet", href="../css/main-style/style.css")
         title Luxury Restauran
     body
@@ -18,17 +20,40 @@ html(lang="en")
                 a(href="/") recipe
                 a(href="/") blog
                 a(href="/") pages
-                a(href="/") contact
+                a(href="/about-us") contact
             .navbar-cart
                 i.fas.fa-shopping-cart
                 i.fas.fa-caret-down
             .navbar-book-table
-                button(type="submit")
+                button.btn(type="submit")
                     img(src="../food-drink.png", alt="")
                     | book your table
 
         block content
-
+        section.speciality
+            img(src="../image-specialy.png", alt="")
+            .specialy-content
+                h3 speciality
+                .content
+                    span excellent
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, perferendis!
+                .content 
+                    span free home delivery
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, officia.
+                .content 
+                    span free home delivery
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, officia.
+        section.container.time-open 
+            
+            h3 opening hours
+            .time-today
+                .time.mf
+                    p monday to friday
+                    p 10am - 10pm
+                .time.ss   
+                    p monday to friday
+                    p 10am - 10pm
+            img(src="../happyclient.png", alt="")
         footer.container-fluid.footer
             .container.footer-content
                 .navigation
@@ -47,7 +72,7 @@ html(lang="en")
                     form(action="")
                         .input-group
                             input(type="text" placeholder="Email Address")
-                            button(type="submit") subscibe
+                            button.btn(type="submit") subscibe
                             i.fas.fa-envelope
                     .icon-connect
                         i.fab.fa-facebook-f
@@ -65,10 +90,31 @@ html(lang="en")
                         .info
                             p get it on
                             p google play
-            .container.copyright copyright
-            
-            
-                    
+            .container.copyright luxury restaurant
 
+        
+        script(src="../owl.carousel/docs/assets/vendors/jquery.min.js")
+        script(src="../owl.carousel/dist/owl.carousel.js")
+        script(type='text/javascript').
+            $("#carousel").owlCarousel({
+                loop:true,
+                autoplay: true,
+                //- autoWidth:true,
+                items:1, 
+            });
+            $("#happy-cilent").owlCarousel({
+                loop:true,
+                autoplay: true,
+                //- autoWidth:true,
+                items:1, 
+                nav: true,
+                navText: ["<img src='../left_arrow.png 'class='left'>","<img src='../right_arrow.png'class='right'>"],
+            });
+            $("#our-cooks").owlCarousel({
+                loop:true,
+                autoplay: true,
+                margin:16,
+                items:4,
+            });
 
-    
+      

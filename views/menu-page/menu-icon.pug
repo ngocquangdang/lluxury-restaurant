@@ -1,0 +1,17 @@
+section.container-fluid
+    .heading
+        p.title menu grid view
+    .tab
+        //- mixin tab-item
+        mixin tab-item(scr,title)
+            .tab-item
+                img.img-item(src=scr, alt="")
+                p= title
+        //- mixin tab-item
+        +tab-item("../icon_all.png", 'all')
+        +tab-item("../icon_breakfast.png", 'breakfast')
+        +tab-item("../icon_lunch.png", 'lunch')
+        +tab-item("../icon_snacks.png", 'snack')
+        +tab-item("../icon_pizza.png", 'pizza')
+        +tab-item("../icon_soups.png", 'soup')
+        +tab-item("../icon_dinner.png", 'dinner')

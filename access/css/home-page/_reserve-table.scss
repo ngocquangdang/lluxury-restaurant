@@ -63,9 +63,10 @@
             .submit-contact{
                 display: grid;
                 grid-template-columns: 40% 60%;
-                grid-template-rows: 2rem;
+                grid-template-rows: 2.5rem;
                 button{
-                    @include button();
+                    @include btn();
+                    padding: 0.5rem 1rem ;
                 }
                 .info{
                     @include info();

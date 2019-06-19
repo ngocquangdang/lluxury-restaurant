@@ -1,0 +1,15 @@
+@import "../mixin/mixin";
+@import "../content/menu";
+
+.list{
+    display: block; 
+    padding: 2rem 0;
+    .heading{
+        h3{
+            @include h3();
+        }
+    }
+    .menu-list{
+        @include menu-list();
+    }
+}

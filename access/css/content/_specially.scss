@@ -1,0 +1,32 @@
+@import "../mixin/mixin";
+
+.speciality{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    img{
+        width: 100%;
+    }
+    .specialy-content{
+        display: grid;
+        background: $bg_speciality;
+        padding: 4rem;
+        padding-right: 15rem;
+        h3{
+            @include h3();
+        }
+        .content{
+            span{
+                color: $title_color;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 900;
+                padding-bottom: 1rem;
+            }
+            p{
+                color: $text_color;
+                margin: 0;
+                
+            }
+        }
+    }
+}

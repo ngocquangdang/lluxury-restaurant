@@ -1,33 +1,35 @@
+@import "../mixin/mixin";
+
 @mixin menu-list {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     padding: 1.5rem 0;
     .list-item{
         display: grid;
         grid-template-columns: 80% 20%;
         padding: 1rem 0;
-        border-bottom: 1px solid;
-        height: auto;
-        margin-right: 1rem;
+        border-bottom: 1px solid $line_color;
+
         .item-inner{
-            padding-right: 2rem;
-            h4{
+            
+            span{
                 margin: 0;
                 text-transform: uppercase;
                 font-weight: 900;
-                font-size: 9pt;
+                font-size: $title_size;
             }
             p{
                 margin: 0;
-                font-size: 9pt;
+                font-size: $text_size;
+                color: $text_color;
             }
         }
         .price{
-            flex: 1;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
-            color: #ffa600fa;
+            color: $btn_background;
             padding: 0 1rem;
             .fas{
                 font-size: smaller;
@@ -65,7 +67,7 @@
                 padding-bottom: 1rem;
                 border-bottom: 1px solid #e5e5e5;
                 
-                h4{
+                span{
                     margin: 0;
                     color: #14141d;
                     font-family: Sintony;
@@ -86,7 +88,7 @@
             .info-item-price{
                 display: flex;
                 align-items: center;
-                color: #fea100;
+                color: $btn_background;
                 font-family: "Playfair Display";
                 padding-top: 1rem;
                 .fas{
@@ -118,7 +120,7 @@
         p{
             margin: 0;
             text-transform: uppercase;
-            font-size: 9pt;
+            font-size: $text_size;
             font-weight: 900;
         }
     }

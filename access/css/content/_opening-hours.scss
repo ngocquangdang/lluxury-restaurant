@@ -1,0 +1,40 @@
+@import "../mixin/mixin";
+
+.time-open{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    position: relative;
+    padding: 2rem 0;
+    h3{
+        @include h3();
+    }
+    .time-today{
+        display: grid;      
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        .time{
+            
+            p{
+                margin: 0;
+                &:nth-child(1){
+                    text-transform: capitalize;
+                    font-style: italic;
+                    font-size: $text_size;
+                    color: $text_color;
+                }
+                &:nth-child(2){
+                    font-family: "Playfair Display";
+                    color: $btn_background;
+                    font-size: $title_size;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    img{
+        position: absolute;
+        bottom: 2rem;
+        right: 0;
+        width: 20%;
+    }
+}

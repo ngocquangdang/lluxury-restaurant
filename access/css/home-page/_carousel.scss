@@ -1,7 +1,22 @@
 @import "../mixin/mixin";
 .carousel{
-    width: 100%;
-    height: 22rem;
-    background: gray;
 
+    &.owl-carousel{
+        position: relative !important;
+        &.item img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &.owl-dots{
+        position: absolute !important;
+        top: 50% !important; 
+        &.owl-dot{
+            display: block !important;
+            span{
+                background: $btn_background !important;
+            }
+        }
+    }
 }

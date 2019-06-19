@@ -52,10 +52,10 @@
                         user-select: none;
                         margin: 0.7rem;
                     }
-                    button{
-                        @include button();
-                        outline: none;
-                        color: white;
+                    .btn{
+                        @include btn();
+                        padding: 0.5rem 1rem;
+                        
                     }
                 }
             }

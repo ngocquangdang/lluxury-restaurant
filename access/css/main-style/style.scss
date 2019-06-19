@@ -1,6 +1,6 @@
 body,html{
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Sintony;
 }
 .container-fluid{
     margin: 0;
@@ -12,7 +12,10 @@ body,html{
 
 @import "../content/navbar";
 @import "../home-page/home-page";
-@import "../menu-page/menu-gird";
+@import "../menu-page/menu";
+@import "../about-us/about-us";
+@import "../content/specially";
+@import "../content/opening-hours";
 @import "../content/footer";
 
 
