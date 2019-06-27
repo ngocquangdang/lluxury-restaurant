@@ -33,17 +33,19 @@
             }
         }
         span::after{
-            content: " \" ";
+            content: " \f10e ";
             font-size: $big_title_size;
             margin-top: auto;
             margin-left: 2rem;
+            color: white;
         }
         span::before{
-            content: " \" ";
+            content: " \f10d ";
             font-size: $big_title_size;
             right: 1rem;
             margin-top: 0;
             margin-right: 2rem;
+            color: white;
         }
         
     }

@@ -1,0 +1,8 @@
+@import "./category";
+@import "./recent-post";
+
+.b-2c{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 2rem;
+}

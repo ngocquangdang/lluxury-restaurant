@@ -667,18 +667,20 @@ body, html {
 }
 
 .info-client .item span::after {
-  content: " \" ";
+  content: " \f10e ";
   font-size: 2rem;
   margin-top: auto;
   margin-left: 2rem;
+  color: white;
 }
 
 .info-client .item span::before {
-  content: " \" ";
+  content: " \f10d ";
   font-size: 2rem;
   right: 1rem;
   margin-top: 0;
   margin-right: 2rem;
+  color: white;
 }
 
 .right {
@@ -1094,6 +1096,115 @@ body, html {
 .menu-title .list-views .list-title .views .price p {
   margin: 0;
   font-size: 17pt;
+}
+
+.category {
+  margin: 0 0 3rem 0;
+}
+
+.category span {
+  color: #14141d;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.category .c-i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category .c-i .r-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: #ffe9f1;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+}
+
+.category .c-i .r-btn .fas {
+  position: absolute;
+  color: #fe4c8d;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+.category .c-i .c-n {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.recent-post {
+  margin: 0 0 3rem 0;
+}
+
+.recent-post span {
+  color: #14141d;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.recent-post .recent-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.recent-post .recent-item .r-i {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}
+
+.recent-post .recent-item .r-i img {
+  width: 100%;
+}
+
+.recent-post .recent-item .r-i .re-it p {
+  margin: 0;
+}
+
+.recent-post .recent-item .r-i .re-it p.ti {
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+  color: #5c6369;
+  font-weight: 700;
+}
+
+.recent-post .recent-item .r-i .re-it p.n-i {
+  color: #14141d;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.b-2c {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 3fr;
+      grid-template-columns: 7fr 3fr;
+  grid-gap: 2rem;
 }
 
 .our-cooks {

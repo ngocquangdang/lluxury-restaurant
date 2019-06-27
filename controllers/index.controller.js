@@ -7,4 +7,7 @@ module.exports.menu= (req, res)=>{
 module.exports.about_us= (req, res)=>{
     res.render('./about-us/about-us')
 }
+module.exports.blogs= (req, res) =>{
+    res.render('./blog/blog')
+}
 

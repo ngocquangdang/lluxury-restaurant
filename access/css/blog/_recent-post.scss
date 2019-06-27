@@ -1,0 +1,37 @@
+.recent-post{
+    margin: 0 0 3rem 0;
+    span{
+      @include span-title();
+    }
+    .recent-item{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 1rem;
+      margin-top: 1rem;
+      .r-i{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1rem;
+        img{
+          width: 100%;  
+        }
+        .re-it{
+          
+          p{
+            margin: 0;
+            &.ti{
+              margin-bottom: 0.9rem;
+              text-transform: uppercase;
+              color: #5c6369;
+              font-weight: 700;
+            }
+            &.n-i{
+              color: #14141d;
+              font-size: 1.1rem;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
