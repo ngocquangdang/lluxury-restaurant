@@ -15,7 +15,7 @@ app.use(express.static('views'))
 
 app.use('/',index)
 
-app.listen(9999, function () {
+app.listen(process.env.PORT || 9999, function () {
   console.log("connect ok")
 })
  
