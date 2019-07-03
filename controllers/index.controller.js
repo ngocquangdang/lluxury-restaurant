@@ -10,4 +10,7 @@ module.exports.about_us= (req, res)=>{
 module.exports.blogs= (req, res) =>{
     res.render('./blog/blog')
 }
+module.exports.blogs_detail= (req, res) =>{
+    res.render('./blog/blog-detail')
+}
 

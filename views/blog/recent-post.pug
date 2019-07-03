@@ -1,15 +1,15 @@
 .recent-post
     span recent post
-    .recent-item
-        mixin item
-            .r-i
+    
+    ul#post.owl-carousel.owl-theme
+        mixin post
+            li.post
                 img(src="../2-layers.png", alt="")
                 .re-it
-                    p.ti 08-nov-2018
+                    p.date 08-nov-2018
                     p.n-i Lorem ipsum dolor sit amet consectetur
-        +item
-        +item
-        +item
-        +item
+        +post
+        +post
+
         
             

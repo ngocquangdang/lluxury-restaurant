@@ -1,0 +1,16 @@
+@import "./blog-details";
+@import "./blog";
+@import "./category";
+@import "./recent-post";
+@import "./archive";
+@import "./tags";
+@import "./pagination";
+
+
+.blog-col-2{
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-gap: 2rem;
+    padding: 4rem 0;
+    
+}

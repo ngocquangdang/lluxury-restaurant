@@ -3,12 +3,13 @@
     span{
       @include span-title();
     }
-    .recent-item{
+    ul{
       display: grid;
-      grid-template-columns: repeat(1,1fr);
-      grid-gap: 1rem;
+      grid-template-columns: 1fr;
       margin-top: 1rem;
-      .r-i{
+      list-style: none;
+      padding: 0;
+      .post{
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 1rem;
@@ -19,7 +20,7 @@
           
           p{
             margin: 0;
-            &.ti{
+            &.date{
               margin-bottom: 0.9rem;
               text-transform: uppercase;
               color: #5c6369;

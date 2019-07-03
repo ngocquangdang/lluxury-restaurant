@@ -1,0 +1,19 @@
+.archive{
+	margin: 0 0 3rem;
+	._title{
+		@include span-title();
+	}
+	.archive_month{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 1rem;
+		.-mm{
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		._number{
+			margin: 0;
+		}
+	}
+	
+}

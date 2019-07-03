@@ -1,4 +1,5 @@
-.blog-main{
+
+.blog-detail{
     .blog-item{
         display: flex;
         justify-content: space-between;
@@ -42,6 +43,49 @@
                     color: #5c6369;
                 }
             }
+            ._qoutes{
+                display: flex;
+                margin: 1.5rem 0;
+                &::before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f10d";
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-weight: 900;
+                    margin-right: 3rem;
+                    color: #fea100;
+                }
+                &::after{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f10e";
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-weight: 900;
+                    color: #fea100;
+                    margin: {
+                        top: auto;
+                        left: 3rem;
+                    }
+                }
+                ._qoute{
+                    text-align: center;
+                    margin: 0;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+            }
+            ._sub-image{
+                display: flex;
+                justify-content: space-between;
+                margin: 3rem 0;
+            }
+            ._sub-text{
+                margin: 3rem 0;
+                color: #5c6369;
+                b{
+                    color: black;
+                }
+            }
             .blog-footer{
                 display: flex;
                 padding: 1rem 0;
@@ -59,22 +103,34 @@
                         right: 1rem;
                     }
                     border-right: 1px solid #d4dade;
-                    .btn{
-                        border: none;
-                        text-transform: uppercase;
-                        border-radius: 5px;
-                        font-size: 14px;
-                        outline: none;
-                        &.-read-more{
-                            background: #ffeace;
+                    .pagin{
+                        display: flex;
+                        .pagin_item{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #ffeac5;
                             color: #d38a0c;
-                            padding: 0.7rem 1rem;
+                            width: 5.5rem;
+                            padding: 0.7rem;
+                            border-top: {
+                                left-radius: 50% 100%;
+                                right-radius: 50% 100%;
+                            }
+                            border-bottom: {
+                                left-radius: 50% 100%;
+                                right-radius: 50% 100%;
+                            }
+                            text-transform: uppercase;
+                            p{
+                                margin: 0 0.5rem;
+                            }
+                            &:hover{
+                                background: $btn_background;
+                                color: #ffffff;
+                            }
                         }
-                        &.-read-more:hover{
-                            background: #fea100;
-                            color: white;
-                        }
-                    }
+                    }  
                     ._like{
                         display: flex;
                         align-items: center;

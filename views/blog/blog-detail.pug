@@ -1,0 +1,52 @@
+extends ../common/common
+block content
+    section.container.blog-col-2
+        .blog.blog-detail
+            iframe#youtube(width='100%', height='270', src='https://www.youtube.com/embed/WX7dUj14Z00?showinfo=0', frameborder='0', allowfullscreen='')
+            //- block
+            .blog-item 
+                //- block_element
+                .blog_date
+                    ._date
+                        p._dd 22
+                        p._mm-yy nov-12
+                .blog_content
+                    .content-item
+                        span._title Archive asdsd ddd dss
+                        p._desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
+                    span._qoutes
+                        p._qoute Uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    ._sub-image
+                        img(src="https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/18698351_809628569202355_4449543781847393010_n.jpg?_nc_cat=107&_nc_oc=AQlkAsgY6mP4eSGuAoW6_UKS1B10xXEeJ4yt3yCl4s7U5DZ7QFwwEjtltRFFUjeu1r4&_nc_ht=scontent.fdad3-2.fna&oh=67f19ce36cb5d96a425cf64dc72442bc&oe=5DB1BE19")
+                        img(src="https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/18698351_809628569202355_4449543781847393010_n.jpg?_nc_cat=107&_nc_oc=AQlkAsgY6mP4eSGuAoW6_UKS1B10xXEeJ4yt3yCl4s7U5DZ7QFwwEjtltRFFUjeu1r4&_nc_ht=scontent.fdad3-2.fna&oh=67f19ce36cb5d96a425cf64dc72442bc&oe=5DB1BE19")
+                    p._sub-text
+                        b Randomised words which don't look even slightly believable. 
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    .blog-footer
+                        ._read-like
+                            .pagin
+                                .pagin_item.-prev
+                                    i.fas.fa-angle-left
+                                    p._prev prev
+                                .pagin_item.-next
+                                    p._next next
+                                    i.fas.fa-angle-right
+                            ._like
+                                ._icon.-like
+                                    i.far.fa-heart
+                                ._number 
+                                    p 55
+                        ._share
+                            ._icon.-share
+                                i.fas.fa-share-alt
+                            ._icon.-fb
+                                i.fab.fa-facebook-f
+                            ._icon.-tw
+                                i.fab.fa-twitter
+                            ._icon.-gg
+                                i.fab.fa-google-plus-g                 
+        .sidebar
+            include ./category
+            //- include ./recent-post
+            include ./archive
+            include ./tags

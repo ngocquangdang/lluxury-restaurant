@@ -1,0 +1,48 @@
+.pagin{
+	display: flex;
+	.pagin_item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #ffeac5;
+		color: #d38a0c;
+		width: 4.5rem;
+		padding: 0.7rem;
+		border-top: {
+			left-radius: 50% 100%;
+			right-radius: 50% 100%;
+		}
+		border-bottom: {
+			left-radius: 50% 100%;
+			right-radius: 50% 100%;
+		}
+		text-transform: uppercase;
+		p{
+			margin: 0 0.5rem;
+        }
+        &:hover{
+            background: $btn_background;
+            color: #ffffff;
+        }
+	}
+	.pagin_page{
+		display: flex;
+		margin: 0 0.5rem;
+		._page{
+			text-align: center;
+			width: 3.5rem;
+			padding: 0.7rem;
+			border: 1px solid #d4dade;
+			border-top: {
+				left-radius: 50% 100%;
+				right-radius: 50% 100%;
+			}
+			border-bottom: {
+				left-radius: 50% 100%;
+				right-radius: 50% 100%;
+			}
+			margin: 0 0.5rem;
+			font-weight: 900;
+		}
+	}
+}
