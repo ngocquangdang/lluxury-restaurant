@@ -1,0 +1,86 @@
+@import "../mixin/mixin";
+
+.reservation_special{
+    background: $background_gray;
+    .special_container{
+        margin: 0 17.5rem;
+        padding: 3rem 0;
+        .special_heading{
+            text-align: center;
+            padding: 1rem 7.5rem;
+            .heading_title{
+                font-size: 35px;
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+        }
+        .special_content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .special_item{
+                width: 30%;
+                .item_image{
+                    display: flex;
+                    height: 13rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .item_detail{
+                    background: white;
+                    padding: 1rem 1.5rem;
+                    .item_title{
+                        font-size: 25px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                    .item_desc{
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                &.-hover{
+                    position: relative;
+                }
+                &.-hover:hover > .special_contact{
+                    opacity: 1;
+                    z-index: 1;
+                    width: -webkit-fill-available;
+                }
+                .special_contact{
+                    position: absolute;
+                    background: #fe4c8d;
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 0.5rem;
+                    text-align: center;
+                    height: -webkit-fill-available;
+                    width: 100%;
+                    opacity: 0;
+                    top: 0;
+                    z-index: -1;
+                    .contact_detail{
+                        padding: 1rem;
+                        border: 1px dashed gray;
+                        height: -webkit-fill-available;
+                        .contact_phone,
+                        .contact_email{
+                            padding: 1rem 0;
+                            .fas{
+                                font-size: 1.5rem;
+                            }
+                            .-contact{
+                                font-size: 24px;
+                                margin: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

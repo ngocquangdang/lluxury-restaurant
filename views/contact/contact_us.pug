@@ -1,0 +1,54 @@
+extends ../common/common
+block content
+    .contact
+        #googleMap(style='width:100%;height:400px;')
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.6353884709747!2d108.11342972485183!3d12.737192738366865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24f6b82b0a1e3ee5!2zVHLGsOG7nW5nIFRp4buDdSBI4buNYyBMw6ogxJDhuqFpIEjDoG5o!5e0!3m2!1svi!2s!4v1562254226881!5m2!1svi!2s', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+        .contact_us
+            .contact_details
+                .contact_email
+                    .form_details
+                        p
+                            span._title get in touch
+                        form(action="")
+                            .input-group
+                                input(type="text" id="name" required)
+                                label(for="name") name*
+                                i.far.fa-user
+                            .input-group
+                                input(type="text" id="email-address" required)
+                                label(for="email-address") email address*
+                                i.far.fa-user
+                            .input-group
+                                textarea(id="phone-number" required)
+                                label(for="phonenumber") message*
+                                i.far.fa-message
+                            .submit-contact
+                                button(type="submit") send now
+                .contact_address
+                    .address_details
+                        p
+                            span._title our address
+                        .address_detail
+                            .detail_info
+                                p
+                                    span._address address
+                                p
+                                    span._info luxury restaurant
+                                    span._info california second street
+                                    span._info 2nd floor
+                            .detail_phone
+                                p
+                                    span._phone phone
+                                p
+                                    span._info +91 8559 5585 6559
+                            .detail_email
+                                p
+                                    span._email email
+                                p
+                                    span._info info@luxuryrestaurent.com
+                            .follow_us
+                                p
+                                    span._follow follow us
+        
+
+

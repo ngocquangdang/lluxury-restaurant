@@ -1,0 +1,37 @@
+.reservation
+    .reservation_heading
+        p
+            span.heading_title Book a Table
+        p.heading_desc Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    .request-table
+        form(action="")
+            .input-group
+                input(type="text" id="name" required)
+                label(for="name") name*
+                i.far.fa-user
+            .input-group
+                input(type="text" id="date" required)
+                label(for="date") date*
+                i.far.fa-user
+            .input-group
+                input(type="text" id="time" required)
+                label(for="time") time*
+                i.far.fa-user
+            .input-group
+                input(type="text" id="email-address" required)
+                label(for="email-address") email address*
+                i.far.fa-user
+            .input-group
+                input(type="text" id="guests" required)
+                label(for="guests") guests* 
+                i.far.fa-user
+            .input-group
+                input(type="text" id="phone-number" required)
+                label(for="phonenumber") phone number*
+                i.far.fa-user
+            .input-group
+                textarea(id="phone-number" required)
+                label(for="phonenumber") phone number*
+                i.far.fa-message
+            .submit-contact
+                    button(type="submit") make reservation

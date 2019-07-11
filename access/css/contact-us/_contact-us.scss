@@ -1,0 +1,112 @@
+@import "../mixin/mixin";
+
+.contact{
+    #googleMap{
+        display: flex;
+    }
+    .contact_us{
+        display: flex;
+        justify-content: center;
+        background: map-get($color, "gray");
+        position: relative;
+        height: 60vh;
+        .contact_details{           
+            position: absolute;
+            display: flex;
+            bottom: 5rem;
+            flex-wrap: wrap;
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+            .contact_email{
+                flex: 1;
+                background: map-get($color, "white");
+                .form_details{
+                    form{
+                        .input-group{
+                            position: relative;  
+                            padding: 1rem 0;
+                            input,
+                            textarea{
+                                display: block;
+                                margin: 0px auto;
+                                border: none;
+                                border-bottom: 1px solid gray;
+                                outline: none;
+                                padding: 6px 0px;
+                                width: 100%;
+                                &:focus + label, &:valid + label {
+                                    top: -1rem;
+                                    left: -0.2rem;
+                                    font-size: 10pt;
+                                }
+                            }
+                            textarea{
+                                height: 5rem;
+                            }
+                            label{
+                                text-transform: capitalize;
+                                color: map-get($color, "text-gray");
+                                position: absolute;
+                                left: 2rem;
+                                top: 4px;
+                                font-size: $text_size;
+                                pointer-events: none;
+                                -webkit-transition: 200ms;
+                                transition: 200ms;
+                            }
+                            .far{
+                                position: absolute;
+                                top: 0;
+                            }  
+                            &:nth-child(7){
+                                grid-column: 1/4;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .submit-contact{ 
+                        button{
+                            border: none;
+                            text-transform: uppercase;
+                            background: #fea100;
+                            border-radius: 5px;
+                            font-size: $title_size;
+                            outline: none;
+                            color: white;   
+                            padding: 0.5rem 1rem ;
+                        }
+                    }
+                }
+            }
+            .contact_address{
+                flex: 1;
+                background: #fe4c8d;
+                text-transform: uppercase;
+                .address_details{
+                    color: #ffffff;
+                    .address_detail{
+                        ._address,
+                        ._phone,
+                        ._email,
+                        ._follow{
+                            font-size: $text_size;
+                        }
+                        ._info{
+                            display: block;
+                            font-size: $title_size;
+                        }
+                    }
+                }
+            }
+            .contact_email .form_details,
+            .contact_address .address_details{
+                padding: 5rem;
+                ._title{
+                    font-size: $big_title_size;
+                    text-transform: capitalize;
+                }
+            }
+            
+        }
+    }
+}
+

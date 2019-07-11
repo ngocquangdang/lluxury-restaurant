@@ -1,3 +1,19 @@
+$color: (
+    "gray": #edf1f3,
+    "text-gray": #5c6369,
+    "yellow": #fea100,
+    "white": #ffffff,
+    "black": #14141d,
+);
+
+$font-size:(
+    "text": 0.9rem,
+    "title": 1rem,
+    "content": 1.5rem,
+    "big": 2rem,
+);
+
+$background_gray: #edf1f3;
 $btn_background: #fea100;
 $bg_speciality: #ecf1f4;
 
@@ -21,7 +37,7 @@ $line_color: #eeeeee;
     font-size: $text_size;
     width: fit-content;
     outline: none;
-    color: white;
+    color: map-get($color, "white");
 }
 
 //--info

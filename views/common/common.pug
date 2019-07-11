@@ -20,14 +20,14 @@ html(lang="en")
                 a(href="/") recipe
                 a(href="/blog") blog
                 a(href="/") pages
-                a(href="/about-us") contact
+                a(href="/contact-us") contact
             .navbar-cart
                 i.fas.fa-shopping-cart
                 i.fas.fa-caret-down
             .navbar-book-table
-                button.btn(type="submit")
+                button.btn(onclick="window.location.href='/book-a-table'")
                     img(src="../food-drink.png", alt="")
-                    | book your table
+                    | book a table
 
         block content
         section.speciality
@@ -60,7 +60,7 @@ html(lang="en")
                     h3 navigation
                     ul
                         li home
-                        li about us
+                        a(href="/about-us") about us
                         li menu
                         li reservation
                         li recipe

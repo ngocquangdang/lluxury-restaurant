@@ -13,4 +13,10 @@ module.exports.blogs= (req, res) =>{
 module.exports.blogs_detail= (req, res) =>{
     res.render('./blog/blog-detail')
 }
+module.exports.book_a_table= (req, res) =>{
+    res.render('./book-a-table/main')
+}
+module.exports.contact_us= (req, res) =>{
+    res.render('./contact/contact_us')
+}
 
