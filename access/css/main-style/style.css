@@ -100,27 +100,31 @@ body, html {
   margin-right: 0.5rem;
 }
 
-.carousel.owl-carousel {
-  position: relative !important;
+.carousel #carousel {
+  position: relative;
 }
 
-.carousel.owl-carousel.item img {
+.carousel #carousel.owl-carousel {
+  position: relative;
+}
+
+.carousel #carousel.owl-carousel .item img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.carousel.owl-dots {
-  position: absolute !important;
-  top: 50% !important;
+.carousel #carousel .owl-theme .owl-dots {
+  position: absolute;
+  top: 50%;
 }
 
-.carousel.owl-dots.owl-dot {
-  display: block !important;
+.carousel #carousel .owl-theme .owl-dots .owl-dot {
+  display: block;
 }
 
-.carousel.owl-dots.owl-dot span {
-  background: #fea100 !important;
+.carousel #carousel .owl-theme .owl-dots .owl-dot span {
+  background: #fea100;
 }
 
 .contact-carousel {
